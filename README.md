@@ -31,7 +31,7 @@ A Docker file is in development for a more swift implementation
 - `SALSA_stepTWO.py`: code for running our trained model on the preprocessed data and to save and postprocess the final mask.
 - `run_SALSA.sh`: code to run the pipeline.
 
-Download the weights of our model from [Google Drive](https://drive.google.com/file/d/1-OcpWwafshk51qnlUT-qQ1o_472A_14F/view?usp=sharing) or from [huggingface.co!](https://huggingface.co/mariabalaguerm/liver-SALSA/)
+If you want to access to the model's weights please contact us! (mbalaguer@vhio.net or adriamarcos@vhio.net)
 
 ## Installation
 
