@@ -2,6 +2,10 @@
 
 This is the code repository of the liver tumor automatic detection and segmentation tool by Raquel Perez-Lopez and colleagues from the Vall d'Hebron Institute of Oncology (VHIO), Barcelona, Spain.
 
+Paper currently under review!
+
+To know more about our group, visit us at https://radiomicsgroup.github.io
+
 
 
 **🚧 WORK IN PROGRESS 🚧**
