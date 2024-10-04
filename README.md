@@ -43,19 +43,14 @@ Download the model's weights from Google Drive or Hugging Face and place in the 
 
 
 ## Usage
-To run the pipeline, call `python run_SALSA.py`:
+To run the pipeline, call `bash run_SALSA.sh`:
 
-`python run_SALSA.py -i /path_to_input_image`
-
-The input to the pipeline can be:
+Inside you need to modify the input to the pipeline, which can be:
 * The path to the image to be segmented in NIfTI format (.nii or .nii.gz). 
 * A csv with all the desired paths of the images to be segmented.
 
 
 The output segmentation file will also be in NIfTI format. The new file will be saved in the same directory at the same level as the image, with the same filename adding '_SALSA' at the end.
-
-See all options in the `python run.py --help`
-
 
 
 ## License
