@@ -17,23 +17,29 @@ Download or clone this repository as follows, and navigate into the new folder /
 
 You may create a new Python environment, we will use anaconda/miniconda:
 
-`conda create --name myenv python=3.8`
+`conda create --name SALSA_env1 python=3.8`
 
-`conda activate myenv`
+`conda activate SALSA_env1`
 
 Install python packages specified in the file requirements.txt from the liver-SALSA folder:
 
-`pip install -r requirements.txt`
+`pip install -r requirements1.txt`
+
+Repeat this same process for a second environment.
+
+Two environments are needed as Total Segmentator (used as a pre-processing step), uses nnunetv1, while the model's has been trained with a newer version nnunetv2. Total Segmentator is being updated to nnunetv2, as soon as its done it will be adapted into this repository too, and only one environment will be needed.
 
 
 A Docker file is in development for a more swift implementation
 
 ## Content
+
+
 - `SALSA_stepONE.py`: code that contains the functions to load and preprocess the data.
 - `SALSA_stepTWO.py`: code for running our trained model on the preprocessed data and to save and postprocess the final mask.
 - `run_SALSA.py`: code to run the pipeline.
 
-If you want to access to the model's weights please contact us! (mbalaguer@vhio.net or adriamarcos@vhio.net)
+Download the model's weights from Google Drive or Hugging Face and place in the `models` folder
 
 
 ## Usage
