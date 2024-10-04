@@ -34,10 +34,10 @@ A Docker file is in development for a more swift implementation
 
 ## Content
 
-
-- `SALSA_stepONE.py`: code that contains the functions to load and preprocess the data.
-- `SALSA_stepTWO.py`: code for running our trained model on the preprocessed data and to save and postprocess the final mask.
-- `run_SALSA.py`: code to run the pipeline.
+- The folder `codes` contains the pre-processing, inference and post-processing parts of the pipeline: 
+    - `SALSA_stepONE.py`: code that contains the functions to load and preprocess the data.
+    - `SALSA_stepTWO.py`: code for running our trained model on the preprocessed data and to save and postprocess the final mask.
+    - `run_SALSA.py`: code to run the pipeline.
 
 Download the model's weights from Google Drive or Hugging Face and place in the `models` folder
 
