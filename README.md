@@ -7,7 +7,6 @@ This is the code repository of the liver tumor automatic detection and segmentat
 </p>
 
 
-**🚧 WORK IN PROGRESS 🚧**
 
 
 ## Requirements
