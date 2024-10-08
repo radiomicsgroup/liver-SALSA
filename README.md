@@ -7,6 +7,11 @@ This is the code repository of the liver tumor automatic detection and segmentat
 </p>
 
 
+The results obtained with our pipeline look like this, where the blue contour is the manual ground truth segmentation (not necessary to run SALSA) and the red contour is the prediction by the model.
+
+<p align="center">
+    <img src=imgs/results.gif>
+</p>
 
 
 ## Requirements
