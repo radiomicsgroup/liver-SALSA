@@ -116,7 +116,7 @@ sympy==1.12
 threadpoolctl==3.2.0
 tifffile==2023.9.26
 torch==2.3.1
-tornado==6.4.1
+tornado==6.4.2
 TotalSegmentator==2.0.5
 tqdm==4.66.1
 traceback2==1.4.0
