@@ -16,6 +16,11 @@ The results obtained with our pipeline look like this, where the blue contour is
 </p>
 
 
+### 📢📢📢 **UPDATE (October 2025)** 
+
+In order to obtain SALSA model's weights, please fill out this [form!](https://apps.docusign.com/api/maestro/v1/accounts/a17d1967-477b-4476-b7f3-c8d47b53a934/workflow_definitions/51999945-59bc-43c2-ba4a-2ce689d4f8cf/trigger?hash=ZjEwYWIwOGZmZDk3MWU0ZTg0NzI3MDg4Y2I2ZGVjMzFkMDdmYjI4NTc1ODU4MmM3OTgzN2M3MmIyZmZiNWI2NGNkMGM5ZDI0MjA4ZWIyZmZhZjdlYmJmOGQ2ZDU3OWRkZWE4YmZkYzhiYjMyYWRlYWQ3MWEyNTJjMjkyNjkyZWNhNGNmZWVmODhiMzNhMjMxODNmNjM3MTliOWZmNTBmOWJmMjNhMjk2M2VlNzdlN2M3ZmIxODA3MmJmODliNTVhNjcxMzQzN2E4Mzg3OTFjMDcxMWY0N2I2MDRjNGFkYWVlY2M1Y2Q3OGRlMGM3ODI3M2JlYmRlYzYwZGI2OTAwNA==)
+
+
 ## Requirements
 Download or clone this repository as follows, and navigate into the new folder /liver-SALSA:
 
