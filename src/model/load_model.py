@@ -9,4 +9,4 @@ def load_model(model_dir):
         return model_dir
     else:
         print('Model weights are not where they are supposed to be :(')
-        return none
+        return None
