@@ -1,7 +1,7 @@
-__pycache__/
+*/__pycache__/
 *.idea
 *.pyc
 *.log
+*.vscode
 .env
 .DS_Store
-structure.md
