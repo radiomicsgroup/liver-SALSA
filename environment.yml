@@ -1,6 +1,5 @@
 name: salsa
 channels:
-  - http://repo.radiomics.vhio.net:9080/conda/public-conda/
   - defaults
 dependencies:
   - _libgcc_mutex=0.1=main
@@ -103,7 +102,7 @@ dependencies:
       - nibabel==5.3.2
       - nnunetv2==2.6.0
       - numexpr==2.10.2
-      - numpy==1.25.2
+      - numpy>=1.26
       - nvidia-cublas-cu12==12.4.5.8
       - nvidia-cuda-cupti-cu12==12.4.127
       - nvidia-cuda-nvrtc-cu12==12.4.127
@@ -182,4 +181,4 @@ dependencies:
       - wrapt==1.17.2
       - xvfbwrapper==0.2.13
       - yacs==0.1.8
-prefix: /nfs/home/clmbalaguer/anaconda3/envs/salsa
+
