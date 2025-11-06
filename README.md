@@ -36,6 +36,8 @@ Thank you for your understanding!
 Download or clone this repository as follows, and navigate into the new folder `/liver-SALSA`:
 
 >git clone `https://github.com/radiomicsgroup/liver-SALSA`
+>
+>cd liver-SALSA
 
 Create a new Python environment (preferably anaconda/miniconda) to ensure compatibility of all dependencies. You can do so easily with `environment.yml` running:
 
