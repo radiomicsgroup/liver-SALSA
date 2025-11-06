@@ -9,7 +9,7 @@ The following third party software or files may be included in or distributed wi
 
 To the extent the license for any open source software requires VHIO to make available to you the corresponding source code and/or modifications, you may obtain a copy of the applicable Source Files by sending a written request, with your name, address, and applicable Onum software product and version to: FundaciÛ Privada Institut díInvestigaciÛ OncolÚgica de Vall díHebron, C. Natzaret, 115-117 (08035), Barcelona, EspaÒa. This offer to obtain a copy of the Source Files is valid for three years from the date you acquired the VHIO software.
 
-Copyright (c) 2025 Fundació Privada Institut d'Investigació Oncològica de Vall d'Hebron.  All rights reserved.
+Copyright (c) 2025 Fundació Privada Institut d'Investigació Oncològica de Vall d'Hebron. All rights reserved.
 
 ==================================================================================
 NOTICES:
