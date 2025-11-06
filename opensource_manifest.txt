@@ -1,4 +1,4 @@
-Open Source Attribution for SALSA software, of the Fundació Privada Institut d'Investigació Oncològica de Vall d'Hebron ("VHIO")
+Open Source Attribution for SALSA software, of the Fundació Privada Institut d'Investigació Oncològica de Vall d'Hebron (VHIO)
 Dated: September 2025
 
 All rights to the above software not expressly granted by VHIO are reserved. No part of the VHIO software may be used, reproduced, modified, distributed, displayed, performed reverse engineered or transmitted in any form or by any means electronic, mechanical, photocopying, recording, or otherwise, without prior written permission of VHIO, except as otherwise expressly permitted by the license terms below with respect to the applicable third party software or files only.
