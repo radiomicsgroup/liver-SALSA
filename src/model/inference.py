@@ -7,9 +7,10 @@ import warnings
 warnings.filterwarnings("ignore",
                         message = "Detected old nnU-Net plans format.*") # I know I have nnU-Net old plans
 
-os.environ["nnUNet_raw"] = "/nfs/rwork/SALSA/nnUNet_TALES/nnUNet_raw"
-os.environ["nnUNet_preprocessed"] = "/nfs/rwork/SALSA/nnUNet_TALES/nnUNet_preprocessed"
-os.environ["nnUNet_results"] = "/nfs/rwork/SALSA/nnUNet_TALES/nnUNet_results"
+# this is only to suppress unnecessary prints, as we are only running inference
+os.environ["nnUNet_raw"] = "/tmp"
+os.environ["nnUNet_preprocessed"] = "/tmp"
+os.environ["nnUNet_results"] = "/tmp"
 
 from nnunetv2.inference.predict_from_raw_data import nnUNetPredictor
 
@@ -56,7 +57,7 @@ def run_inference(scan_folder: str, model_dir: str, device: str, clean: bool = T
 
     # initializes the network architecture, loads the checkpoint
     predictor.initialize_from_trained_model_folder(
-        os.path.join(model_dir, 'Dataset001_TALES/nnUNetTrainer__nnUNetPlans__3d_lowres'),
+        os.path.join(model_dir, 'Dataset001_SALSA-liver/nnUNetTrainer__nnUNetPlans__3d_lowres'),
         use_folds = (0,),
         checkpoint_name = 'checkpoint_final.pth',
     )
@@ -82,7 +83,7 @@ def run_inference(scan_folder: str, model_dir: str, device: str, clean: bool = T
 
     # initializes the network architecture, loads the checkpoint
     predictor.initialize_from_trained_model_folder(
-        os.path.join(model_dir, 'Dataset001_TALES/nnUNetTrainer__nnUNetPlans__3d_cascade_fullres'),
+        os.path.join(model_dir, 'Dataset001_SALSA-liver/nnUNetTrainer__nnUNetPlans__3d_cascade_fullres'),
         use_folds = (0,),
         checkpoint_name = 'checkpoint_final.pth',
     )
