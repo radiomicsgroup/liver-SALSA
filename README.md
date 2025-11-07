@@ -134,7 +134,7 @@ path/to/your/scan1/
   │   ├── liver.nii.gz                      # total segmentator mask
   │   ├── liver_postprocessed.nii.gz
   │   ├── liver_resampled.nii.gz
-  │   │   scan_resampled.nii.gz
+  │   ├── scan_resampled.nii.gz
   │   └── mask_resampled.nii.gz
   └── scan1_SALSA.nii.gz                # resulting SALSA-liver segmentation
 
@@ -147,7 +147,7 @@ path/to/your/scan2/
   │   ├── liver.nii.gz                      # total segmentator mask
   │   ├── liver_postprocessed.nii.gz
   │   ├── liver_resampled.nii.gz
-  │   │   scan_resampled.nii.gz
+  │   ├── scan_resampled.nii.gz
   │   └── mask_resampled.nii.gz
   └── scan2_SALSA.nii.gz                # resulting SALSA-liver segmentation
 ```
