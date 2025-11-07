@@ -59,7 +59,7 @@ The main scripts included in this repo can be explained as follows:
     - `scanX_GT.nii.gz`: ground truth segmentations of the example scans (just in case you want to check out how it compares to a manual segmentation)
 
 
-- Folder `src` contains all the code, it's subdivided in:
+- Folder `src` contains all the code for the pipeline itself, it's subdivided in:
     - `data`: including functions for data pre-processing and post-processing
     - `models`: where the model is placed and script that runs inference
     - `utils`: several functions for basic uses of the pipeline (generate csv, gifs...)
