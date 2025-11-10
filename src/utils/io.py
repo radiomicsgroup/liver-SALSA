@@ -1,6 +1,4 @@
 import nibabel as nib
-import numpy
-
 
 def check_scan(path_scan: str):
     """
