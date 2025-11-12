@@ -199,5 +199,5 @@ def create_gif(scan, salsa, liver, filename):
 
     d = 10000/scan.shape[2]
     print(f'saving gif as:', filename)
-    print(len(slices))
+
     frame_one.save(filename, format = "GIF", append_images = slices[1:], save_all = True, duration = d, loop = 0) # duration of each frame in milliseconds
