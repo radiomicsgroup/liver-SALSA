@@ -93,7 +93,10 @@ def undo_resampling(path_scan: str, scan_folder: str, mask_resampled, target_spa
 
     mask_original_nib = nib.Nifti1Image(mask_original.astype(np.uint8), affine = scan_tensor.meta["affine"])
 
-    path_SALSA = path_scan.replace('.nii.gz', '_SALSA.nii.gz')
+    if path_scan.endswith('.nii.gz'):
+        path_SALSA = path_scan.replace('.nii.gz', '_SALSA.nii.gz')
+    elif path_scan.endswith('.nii'):
+        path_SALSA = path_scan.replace('.nii', '_SALSA.nii.gz')
     nib.save(mask_original_nib, path_SALSA)
     print(f"**********************************************SALSA mask saved*********************************************")
     print(path_SALSA)
@@ -108,7 +111,10 @@ def resample2scan(path_scan: str):
     Output:
         Saves ./<scan_name>_SALSA.nii.gz
     """
-    path_SALSA = path_scan.replace('.nii.gz', '_SALSA.nii.gz')
+    if path_scan.endswith('.nii.gz'):
+        path_SALSA = path_scan.replace('.nii.gz', '_SALSA.nii.gz')
+    elif path_scan.endswith('.nii'):
+        path_SALSA = path_scan.replace('.nii', '_SALSA.nii.gz')
     scan = nib.load(path_scan)
     mask = nib.load(path_SALSA)
     aligned = resample_from_to(mask, scan)
@@ -128,7 +134,10 @@ def recist_labeling(path_scan: str, vol_thr_mm3 = 523.6):
         * mask_SALSA_recist: Nibabel image, corresponding to the predicted segmentation mask inferred by SALSA resampled with 1s (measurable disease) and 2s (non-measurable disease)
     """
 
-    path_SALSA = path_scan.replace('.nii.gz', '_SALSA.nii.gz')
+    if path_scan.endswith('.nii.gz'):
+        path_SALSA = path_scan.replace('.nii.gz', '_SALSA.nii.gz')
+    elif path_scan.endswith('.nii'):
+        path_SALSA = path_scan.replace('.nii', '_SALSA.nii.gz')
     mask = nib.load(path_SALSA)
     mask_data = mask.get_fdata().astype(np.uint8)
 
