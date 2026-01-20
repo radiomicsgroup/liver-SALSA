@@ -215,7 +215,15 @@ def preprocess_case(path_scan: str, scan_folder: str, save_files: bool):
     print('···············································Pre-processing···············································')
     run_total_segmentator_subprocess(path_scan, scan_folder, bool(save_files))
     scan_resampled, liver_resampled = resampling(path_scan, scan_folder, bool(save_files))
-    liver_postprocessed = postprocess_liver(liver_resampled, scan_folder, bool(save_files))
-    crop_and_padding(scan_resampled, liver_postprocessed, scan_folder, bool(save_files))
+    
+    liver_is_not_empty = np.any(liver_resampled.dataobj)
+    if not liver_is_not_empty:
+        print('No liver detected in scan during pre-processing')
+        liver_postprocessed = liver_resampled
+
+    else:
+        liver_postprocessed = postprocess_liver(liver_resampled, scan_folder, bool(save_files))
+        crop_and_padding(scan_resampled, liver_postprocessed, scan_folder, bool(save_files))
+
     print(f"···········································Pre-processing done·············································")
     return scan_resampled, liver_postprocessed

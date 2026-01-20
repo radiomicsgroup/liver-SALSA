@@ -1,6 +1,7 @@
 import os
 import shutil
 import argparse
+import numpy as np
 import pandas as pd
 
 from src.utils.io import check_scan
@@ -40,19 +41,30 @@ def main():
                 # A) PRE-PROCESSING
                 scan_resampled, liver_postprocessed = preprocess_case(path_scan, scan_folder, save_files = bool(args.keep_intermediate_files))
 
-                # B) INFERENCE
-                model_dir = load_model(args.model_dir)
-                run_inference(scan_folder, model_dir, args.device)
+                liver_is_not_empty = np.any(liver_postprocessed.dataobj) 
 
-                # C) POST-PROCESSING
-                postprocess_case(path_scan, scan_folder, scan_resampled, liver_postprocessed, save_files = bool(args.keep_intermediate_files), recist = bool(args.recist))
-
-                # D) CLEAN UP!!!!!
-                if os.path.exists(os.path.join(folder_dir, scan_name + '_SALSA.nii.gz')):
+                if not liver_is_not_empty:
+                    print('No liver detected in scan:', path_scan)
                     if args.keep_intermediate_files == False: # turn to True for debugging
                         print('Removing intermediate files at:', scan_folder)
                         if os.path.exists(scan_folder):
                             shutil.rmtree(scan_folder)
+                    continue    
+
+                else:
+                    # B) INFERENCE
+                    model_dir = load_model(args.model_dir)
+                    run_inference(scan_folder, model_dir, args.device)
+
+                    # C) POST-PROCESSING
+                    postprocess_case(path_scan, scan_folder, scan_resampled, liver_postprocessed, save_files = bool(args.keep_intermediate_files), recist = bool(args.recist))
+
+                    # D) CLEAN UP!!!!!
+                    if os.path.exists(os.path.join(folder_dir, scan_name + '_SALSA.nii.gz')):
+                        if args.keep_intermediate_files == False: # turn to True for debugging
+                            print('Removing intermediate files at:', scan_folder)
+                            if os.path.exists(scan_folder):
+                                shutil.rmtree(scan_folder)
 
                 print('Done with:', path_scan)
                 print('------------------------------------------------------------------------------------------------------------')
