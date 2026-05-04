@@ -27,7 +27,7 @@ In order to obtain SALSA-liver model's weights, please fill out this [form!](htt
 Applications that don't meet the following criteria will be rejected:
 
 1. Using a institutional email address.
-2. The applicant and the authorized institutional signee can't be the same individual.
+2. The applicant, the principal investigator and the authorized institutional signee can't be the same individual.
 3. Project descriptions not including details such as population size, methodology, or scope of implementation.
 
 Thank you for your understanding!
