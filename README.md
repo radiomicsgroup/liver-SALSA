@@ -1,5 +1,4 @@
-# SALSA: System for Automatic liver Lesion Segmentation And detection
-
+<h1>SALSA-liver<br>System for Automatic Lesion Segmentation And detection</h1>
 
 This is the code repository of the liver tumor automatic detection and segmentation tool by Dr. Raquel Perez-Lopez and colleagues from the Radiomics group at the Vall d'Hebron Institute of Oncology (VHIO), Barcelona, Spain.
 SALSA-liver is a deep learning based tool for the automatic detection and delineation of liver tumors, this library contains the codes for the pipeline that has been described in our paper (jump to [citation](#citation))
